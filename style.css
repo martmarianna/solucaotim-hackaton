@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* { /*Para zerar algumas propriedades padrão do CSS e criar as próprias*/
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body { /*aplicar cor no fundo e nas letras do corpo do site*/
+    background-color: white;
+    color: black;
+}
+
+html {
+    font-family:"Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+
+a { /*tirar a decoração padrão da tag âncora*/
+    text-decoration: none;
+}
+
+ul { /*tirar a decoração padrão da tag lista*/
+    list-style: none;
+}
+
+header{
+    background-color: #004aad;
+    color:white;
+    /*padding: 0px;*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: roboto;
+    font-weight: 300;
+    padding-top: 10px;
+  }
+  header div{
+    display: flex;
+    flex-direction: row;
+  }
+  header ul {
+    display: flex; 
+    flex-direction: row; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    align-items: center; 
+  }
+  header ul li{
+    display: flex;
+    height: 20px;
+    width: auto;
+    margin-left: 50px;
+  }
+  header ul li img{
+    height: 45px;
+    width: 45px;
+    margin-right: 15px;
+  }
+  header ul li a{
+    display: flex;
+    align-items: center; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 25px; 
+    height: 100%;
+  }
+  #Namemais{
+    color: #df0024;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Teko", sans-serif;
+    margin-left: 30px;
+  }
+  #NameTalentosas{
+    color:white;
+    font-size: 40px;
+    margin-left: 5px;
+    font-family: "Teko", sans-serif;
+  }
+  #NameTIM{
+    color: #df0024;
+    font-size: 40px;
+    /*font-family: monserrat;*/
+    font-family: "Teko", sans-serif;
+  }
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+    margin-left: 60px;
+    padding-left: 60px;
+    margin-top: 20px;
+}
+
+.title2{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    margin-left: 60px;
+    padding-left: 60px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 70px;
+    padding-right: 70px;
+    margin-top: -20px;
+}
+
+.box1{
+    background-color: #004aad ;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 280px;
+
+    max-width: 350px;
+
+    margin-top: 20px;
+
+}
+
+/*.legenda{
+    /*padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /*gap: 2rem;*/
+    /*flex-basis: 280px;
+
+    max-width: 350px;*/
+
+.base{       
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 344px;
+    }
+
+.legenda{
+    max-width: 1120px; /*largura máxima de um elemento*/
+    margin:auto;
+    padding: 1.5rem ;
+    padding-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    gap:1.5rem;
+    padding: 1rem;
+
+    border-radius: 5px;
+
+    /*font-family: jost, sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    /*color: whitesmoke;*/
+}
+
+.base1{
+    background-color: #004aad;
+    /*border-radius: 40%;*/       
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 344px;
+    margin-bottom: -30px;
+    color:white;
+    }
+
+.complete {
+    background-color: #004aad;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 344px;
+    margin-top: -40px;
+    color: white;
+}
+
+footer {
+    max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #526FFF ;
+    margin: auto;
+    margin-top: 2rem;
+}
